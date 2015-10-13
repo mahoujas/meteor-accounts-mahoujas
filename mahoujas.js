@@ -1,3 +1,5 @@
+Accounts.oauth.registerService('mahoujas');
+
 if (Meteor.isClient) {
     Meteor.loginWithMahoujas = function(options, callback) {
         // support a callback without options

@@ -1,7 +1,7 @@
 Package.describe({
     name: "mahoujas:accounts-mahoujas",
     summary: "Login service for Mahoujas accounts",
-    version: "1.0.0",
+    version: "1.1.0",
     documentation: 'README.md'
 });
 
@@ -11,7 +11,7 @@ Package.onUse(function(api) {
     // Export Accounts (etc) to packages using this one.
     api.imply('accounts-base', ['client', 'server']);
     api.use('accounts-oauth', ['client', 'server']);
-    api.use('mahoujas:mahoujas@1.0.0', ['client', 'server']);
+    api.use('mahoujas:mahoujas', ['client', 'server']);
 
     api.addFiles('mahoujas_login_button.css', 'client');
 
